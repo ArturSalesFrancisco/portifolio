@@ -1,0 +1,179 @@
+body{
+    background-color: #ede7d5;
+    background-image:             
+        linear-gradient(90deg, transparent 79px, #ff8383 79px, #ff8383 81px, transparent 81px),
+        linear-gradient(#a4b1bb 1px, transparent 1px);
+    background-size: 100% 30px;
+    margin: 0;
+    padding: 20px 20px 20px 100px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+}
+
+.inicial{
+    display: flex;
+    margin: 20px 80px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.perfil-artur{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    border: 4px solid black;
+    box-shadow: 8px 8px 0 0 black;
+}
+
+.blocos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+}
+
+.infos-iniciais{
+    display: flex;
+    gap: 50px;
+}
+
+.bloco-informacoes{
+    background-color: #FDC800;
+    height: 200px;
+    width: 40%;
+    border-radius: 25px;
+    border: 4px solid black;
+    padding: 10px;
+    box-shadow: 8px 8px 0 0 black;
+}
+
+.bloco-apresentacao{
+    background-color: #ED5621;
+    height: 200px;
+    width: 60%;
+    border-radius: 25px;
+    border: 4px solid black;
+    padding: 10px;
+    box-shadow: 8px 8px 0 0 black;
+}
+
+.bloco-branco{
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+.texto-apresentacao{
+    font-size: 16px;
+}
+
+.mais-infos{
+    background-color: rgb(224, 206, 183);
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 80px;
+    gap: 20px;
+    color: black;
+    box-shadow: 8px 8px 0 0 black;
+}
+
+.interesse{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 15 px;
+}
+
+.icones-img{
+    width: 50px;
+    height: 50px;
+}
+
+.tecnologias{
+    margin: 20px 80px;
+}
+
+.div-icon-tecno{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon-ferramentas{
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.desenhos{
+    margin: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sobre-chico{
+    display: flex;
+    gap: 50px;
+}
+
+.bloco-chico{
+    background-color: #18cc54;
+    height: 200px;
+    width: 60%;
+    border-radius: 25px;
+    border: 4px solid black;
+    padding: 10px;
+    box-shadow: 8px 8px 0 0 black;
+}
+
+.sinopse-chico{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bloco-infos-chico{
+    background-color: #2373e2;
+    height: 200px;
+    width: 40%;
+    border-radius: 25px;
+    border: 4px solid black;
+    padding: 10px;
+    box-shadow: 8px 8px 0 0 black;
+}
+
+.galeria{
+    display: flex;
+    gap: 30px;
+}
+
+.img-estampas{
+    height: 300px;
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    border: 4px solid black;
+}
+
+.img-camisa{
+    height: 300px;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    border: 4px solid black;
+}
