@@ -1,16 +1,16 @@
-import Perfil from "../../assets/Perfil.jpg";
-import Arte from "../../assets/paint.png";
-import Naruto from "../../assets/naruto.png";
-import Quadrinho from "../../assets/quadrinho.png";
-import CamisaGolias from "../../assets/camisa.jpg";
-import Estampas from "../../assets/camisa2.jpg";
-import Html from "../../assets/tecnologias/html.png";
-import Css from "../../assets/tecnologias/css.png";
-import Js from "../../assets/tecnologias/js.png";
-import React from "../../assets/tecnologias/react.png";
-import Python from "../../assets/tecnologias/python.png";
-import Java from "../../assets/tecnologias/java.png";
-import Node from "../../assets/tecnologias/node.png";
+import Perfil from "/assets/Perfil.jpg";
+import Arte from "/assets/paint.png";
+import Naruto from "/assets/naruto.png";
+import Quadrinho from "/assets/quadrinho.png";
+import CamisaGolias from "/assets/camisa.jpg";
+import Estampas from "/assets/camisa2.jpg";
+import Html from "/assets/tecnologias/html.png";
+import Css from "/assets/tecnologias/css.png";
+import Js from "/assets/tecnologias/js.png";
+import React from "/assets/tecnologias/react.png";
+import Python from "/assets/tecnologias/python.png";
+import Java from "/assets/tecnologias/java.png";
+import Node from "/assets/tecnologias/node.png";
 import "./Home.css";
 
 function Home(){

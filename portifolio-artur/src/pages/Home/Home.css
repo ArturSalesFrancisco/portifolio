@@ -157,7 +157,8 @@ body{
 
 .galeria{
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    flex-direction: row;
 }
 
 .img-estampas{
