@@ -1,15 +1,21 @@
+import CardProjeto from "../../components/CardProjeto/CardProjeto";
 import "./Projetos.css";
+import { meusProjetos } from "../../data/projetosData";
 
 function Projetos(){
 
-    const meusProjetos = [
-        {
-            "id"
-        }
-    ]
-
     return(
-        <>meus projetos</>
+        <>
+        <div className="bloco-branco">
+            CONHEÇA MEUS PROJETOS:
+        </div>
+
+        {meusProjetos.map(project => {
+            return(
+                <CardProjeto project={project}/>
+            )
+        })}
+        </>
     )
 }
 
