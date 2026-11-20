@@ -1,0 +1,78 @@
+.fale-comigo{
+    margin: 20px 80px;
+}
+
+.entrar-em-contato{
+    border: 4px solid black;
+    box-shadow: 8px 8px 0 0 black;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.email{
+    padding: 5px;
+    background-color: #282828;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-contato {
+  background-color: #282828;
+  padding: 40px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.grupo-campos {
+  display: flex;
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: cor;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.campo input, 
+.campo textarea {
+  background-color: #1a1a1a;
+  border: 4px solid #000;
+  border-radius: 4px;
+  padding: 14px;
+  font-size: 14px;
+  color: white;
+  outline: none;
+}
+
+.campo input:focus, 
+.campo textarea:focus {
+  border-color: white;
+}
+
+.botao-enviar{
+    background-color: rgb(15, 193, 86);
+    border: 4px solid black;
+    padding: 15px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botao-enviar:hover {
+  background-color: #FFF;
+}
+
+.contatos{
+    margin-top: 50px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
