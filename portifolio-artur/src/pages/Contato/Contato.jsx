@@ -4,10 +4,13 @@ import WhatsApp from "../../../public/assets/contato/whatsapp.png";
 import Linkedin from "../../../public/assets/contato/linkedin.png";
 import GitHub from "../../../public/assets/tecnologias/github.png";
 import BotaoContato from "../../components/BotaoContato/BotaoContato";
+import BotaoVoltar from "../../components/BotaoVoltar/BotaoVoltar";
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import { useTranslation } from "react-i18next";
 
 function Contato(){
+    const { t } = useTranslation();
     const form = useRef();
     const enviarEmail = (e) => {
         e.preventDefault();
@@ -28,7 +31,8 @@ function Contato(){
 
     return(
         <article className="fale-comigo">
-            <p className="bloco-branco">MANDE UMA MENSAGEM:</p>
+            <BotaoVoltar texto={t('projetos.btnInicial')} rota={'/'}/>
+            <p className="bloco-branco">{t('contato.mensagem')}</p>
 
             <div className="entrar-em-contato">
                 <div className="faixa-topo">
@@ -41,26 +45,26 @@ function Contato(){
                 <form ref={form} onSubmit={enviarEmail} className="form-contato">
                     <div className="grupo-campos">
                         <div className="campo">
-                        <label>NOME</label>
-                        <input type="text" name="user_name" placeholder="Seu nome completo" required />
+                        <label>{t('contato.nome')}</label>
+                        <input type="text" name="user_name" placeholder={t('contato.nomeCampo')} required />
                         </div>
                         <div className="campo">
-                        <label>EMAIL</label>
-                        <input type="email" name="user_email" placeholder="seu.email@exemplo.com" required />
+                        <label>{t('contato.email')}</label>
+                        <input type="email" name="user_email" placeholder={t('contato.emailCampo')} required />
                         </div>
                     </div>
 
                     <div className="campo">
-                        <label>ASSUNTO</label>
-                        <input type="text" name="subject" placeholder="Qual o assunto do email?" required />
+                        <label>{t('contato.assunto')}</label>
+                        <input type="text" name="subject" placeholder={t('contato.assuntoCampo')} required />
                     </div>
 
                     <div className="campo">
-                        <label>MENSAGEM</label>
-                        <textarea name="message" rows="6" placeholder="Sua mensagem ..." required></textarea>
+                        <label>{t('contato.conteudo')}</label>
+                        <textarea name="message" rows="6" placeholder={t('contato.conteudoCampo')} required></textarea>
                     </div>
 
-                    <button type="submit" className="botao-enviar">Enviar</button>
+                    <button type="submit" className="botao-enviar">{t('contato.enviar')}</button>
                 </form>
 
             </div>

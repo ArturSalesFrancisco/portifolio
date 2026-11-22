@@ -38,18 +38,30 @@
     margin: 30px 0;
 }
 
-.galeria-telas{
+.bloco-galeria{
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria-telas{
+    columns: 3;
+    column-gap: 15px;
     margin-bottom: 50px;
+    width: 80%;
 }
 
 .img-galeria{
-    width: 45%;
-    height: 30%;
-    object-fit: cover;
-    object-position: center;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.img-galeria:hover {
+    transform: scale(1.02);
 }
 
 .link-repo{

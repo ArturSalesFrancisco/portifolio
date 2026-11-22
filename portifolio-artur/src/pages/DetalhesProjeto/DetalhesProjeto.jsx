@@ -1,10 +1,15 @@
 import { Link, useParams } from "react-router-dom";
 import "./DetalhesProjeto.css";
-import { meusProjetos } from "../../data/projetosData";
 import GitHubIcon from "/assets/tecnologias/github.png"
 import BotaoVoltar from "../../components/BotaoVoltar/BotaoVoltar";
+import { useTranslation } from 'react-i18next';
+import { meusProjetosPt } from '../../data/projetosPt';
+import { meusProjetosEn } from '../../data/projetosEn';
 
 function DetalhesProjeto() {
+    const { t, i18n } = useTranslation();
+    const meusProjetos = i18n.language === 'en' ? meusProjetosEn : meusProjetosPt;
+
     const {id} = useParams();
     const projetoAtual = meusProjetos.find((p) => p.id == id);
 
@@ -14,22 +19,23 @@ function DetalhesProjeto() {
 
     return(
         <article>
-            <BotaoVoltar texto={"← Voltar para projetos"} rota={'/projetos'}/>
+            <BotaoVoltar texto={t('projetos.btnVoltar')} rota={'/projetos'}/>
             <div className="conteudo-projeto">
                 <img className="banner-projeto" src={projetoAtual.img} alt={projetoAtual.nome} />
                 <div className="informacoes">
                     <div className="cabecalho">
                         <h1>{projetoAtual.nome.toUpperCase()}</h1>
-                        <p className={projetoAtual.concluido ? "status-concluido" : "status-trabalhando"}>{projetoAtual.concluido ? "Concluído" : "Em construção"}</p>
+                        <p className={projetoAtual.concluido ? "status-concluido" : "status-trabalhando"}>{projetoAtual.concluido ? t('projetos.concluido') : t('projetos.emConstrucao')}</p>
                     </div>
                     <p>{projetoAtual.descricao}</p>
 
-                    <p className="bloco-branco faixa-subtitulo">COMO FUNCIONA:</p>
+                    <p className="bloco-branco faixa-subtitulo">{t('projetos.funcionamento')}</p>
                 </div>
             </div>
             <p className="funcionalidade">{projetoAtual.funcionalidade}</p>
 
-            <div className="galeria-telas">
+            <div className="bloco-galeria">
+                <div className="galeria-telas">
             {projetoAtual.galeria.map((foto, index) => {
                 return(
                     <img
@@ -40,11 +46,12 @@ function DetalhesProjeto() {
                     />
                 )
             })}
+                </div>
             </div>
 
             <Link className="link-repo" to={projetoAtual.repositorio}>
                 <img className="github-icon" src={GitHubIcon} alt="github-icon" />
-                <p>Repositório Git</p>
+                <p>{t('projetos.repositorio')}</p>
             </Link>
         </article>
     )

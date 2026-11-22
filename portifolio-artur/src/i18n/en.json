@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Home",
+    "projetos": "Projects",
+    "contato": "Contact"
+  },
+  "home": {
+        "nome": "ARTUR SALES",
+        "idade": "• 18 years old / Ibirité-MG",
+        "curso": "• 2nd Semester of Software Engineering",
+        "faculdade": "PUC Minas - Coreu",
+        "apresentacao": "Starting out in the software development field and evolving with every commit! Working every day discovering new technologies and exercising creativity at every moment!",
+        "sobreMim": "GET TO KNOW A LITTLE ABOUT ME:",
+        "meusInteresses": "PERSONAL INTERESTS:",
+        "interesse1": "Drawing and creating all kinds of manual arts;",
+        "interesse2": "Nerd/geek movies, series, and books, or those involving sci-fi, adventure, and fantasy;",
+        "interesse3": "Manga and comic books - mainly national works;",
+        "ferramentas": "TOOLS I HAVE BEEN LEARNING IN THE COURSE:",
+        "meusProjetos": "CHECK OUT MY PROJECTS",
+        "desenhos": "MORE ABOUT MY DRAWINGS:",
+        "descChico": "For the past 3 years, I have been building a comic book universe starring Chico, a boy who lives in a fantasy world and dreams of exploring the vast lands of the planet, just like his parents. On his journey, Chico meets extraordinary creatures and discovers that the world isn't all roses, as he once imagined.",
+        "descCamisas": "What started out as just drawings, today adds up to 3 sketchbooks of characters, scripts, keychains, stickers, and even t-shirt and hoodie prints featuring Chico and other characters from the plot."
+  },
+  "projetos": {
+    "btnInicial": "← Back to Home",
+    "conhecaProjetos": "DISCOVER MY PROJECTS:",
+    "btnVoltar": "← Back to projects",
+    "concluido": "Completed",
+    "emConstrucao": "Under Construction",
+    "funcionamento": "HOW IT WORKS:",
+    "repositorio": "Git Repository",
+    "feitoCom": "Made using:",
+    "detalhes": "See details"
+},
+"contato": {
+  "btn": "CONTACT ME",
+  "mensagem": "SEND ME A MESSAGE:",
+  "nome": "NAME",
+  "email": "EMAIL",
+  "assunto": "SUBJECT",
+  "conteudo": "MENSSAGE",
+  "enviar": "Send",
+  "nomeCampo": "Insert full name",
+  "emailCampo": "your.email@example.com",
+  "assuntoCampo": "What's this message about?",
+  "conteudoCampo": "Your message ..."
+}
+}

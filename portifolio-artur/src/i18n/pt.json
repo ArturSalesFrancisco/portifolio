@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Início",
+    "projetos": "Projetos",
+    "contato": "Contato"
+  },
+  "home": {
+    "nome": "ARTUR SALES",
+    "idade": "•18 anos / Ibirité-MG",
+    "curso": "• 2º Período de Engenharia de Softawe",
+    "faculdade": "PUC Minas - Coreu",
+    "apresentacao": "Iniciando na área de desenvolvimento de software e evoluindo a cada commit! Trabalhando a cada dia descobrindo novas tecnologias e exercitando a criatividade a cada instante!",
+    "sobreMim": "CONHEÇA UM POUCO SOBRE MIM:",
+    "meusInteresses": "INTERESSES PESSOAIS:",
+    "interesse1": "Desenho e criação de todo tipo de artes manuais;",
+    "interesse2": "Filmes, séries e livros nerd/geek ou que envolvam ficção científica, aventura e fantasia;",
+    "interesse3": "Mangás e quadrinhos - principalmente obras nacionais;",
+    "ferramentas": "FERRAMENTAS QUE VENHO APRENDENDO NO CURSO:",
+    "meusProjetos": "CONHEÇA MEUS PROJETOS",
+    "desenhos": "MAIS SOBRE MEUS DESENHOS:",
+    "descChico": "Nos últimos 3 anos, venho construindo um universo de quadrinho protagonizado por Chico, um garoto que vive num mundo fantasioso e que sonha em explorar as terrar vastas do planeta, assim como seus pais. Em sua jornada, Chico conhece criaturas extraordinárias e descobre que o mundo não são só flores, como ele imaginava.",
+    "descCamisas": "O que começaram como apenas desenhos, hoje já somam 3 cadernos de personagens, roteiros, chaveiros, adesivos e até estampa de camisetas e moletons com Chico e outros personagens da trama."
+  },
+  "projetos": {
+    "btnInicial": "← Voltar para página inicial",
+    "conhecaProjetos": "CONHEÇA MEUS PROJETOS:",
+    "btnVoltar": "← Voltar para projetos",
+    "concluido": "Concluído",
+    "emConstrucao": "Em Construção",
+    "funcionamento": "COMO FUNCIONA:",
+    "repositorio": "Repositório Git",
+    "feitoCom": "Feito usando:",
+    "detalhes": "Ver detalhes"
+  },
+  "contato": {
+    "btn": "MEUS CONTATOS",
+    "mensagem": "ME MANDE UMA MENSAGEM:",
+    "nome": "NOME",
+    "email": "EMAIL",
+    "assunto": "ASSUNTO",
+    "conteudo": "MENSAGEM",
+    "enviar": "Enviar",
+    "nomeCampo": "Seu nome completo",
+    "emailCampo": "seu.email@exemplo.com",
+    "assuntoCampo": "Qual o assunto do email?",
+    "conteudoCampo": "Sua mensagem ..."
+  }
+}

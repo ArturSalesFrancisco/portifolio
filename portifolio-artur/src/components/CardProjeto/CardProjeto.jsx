@@ -1,7 +1,10 @@
 import {Link} from "react-router-dom";
 import "./CardProjeto.css";
+import { useTranslation } from 'react-i18next';
 
 function CardProjeto({project}){
+    const { t } = useTranslation();
+
     return(
         <article key={project.id} className="project">
             <div className="interface-projeto">
@@ -16,15 +19,15 @@ function CardProjeto({project}){
             <div className="infos-projeto">
                 <div className="cabecalho">
                     <h1 className="nome-projeto">{project.nome}</h1>
-                    <p className={project.concluido ? "status-concluido" : "status-trabalhando"}>{project.concluido ? "Concluído" : "Em construção"}</p>
+                    <p className={project.concluido ? "status-concluido" : "status-trabalhando"}>{project.concluido ? t('projetos.concluido') : t('projetos.emConstrucao')}</p>
                 </div>
                 <div className="secundarios">
-                    <p className="linguagem">Feito usando: {project.linguagem}</p>
+                    <p className="linguagem">{t('projetos.feitoCom')} {project.linguagem}</p>
                     <p>•</p>
                     <p className="categoria">{project.categoria}</p>
                 </div>
                 <p className="descricao">{project.descricao}</p>
-                <Link className="link" to={`/projetos/${project.id}`}>Ver Detalhes</Link>
+                <Link className="link" to={`/projetos/${project.id}`}>{t('projetos.detalhes')}</Link>
             </div>
         </article>
     )
