@@ -1,8 +1,8 @@
 import "./Contato.css";
-import Instagram from "../../../public/assets/contato/instagram.png";
-import WhatsApp from "../../../public/assets/contato/whatsapp.png";
-import Linkedin from "../../../public/assets/contato/linkedin.png";
-import GitHub from "../../../public/assets/tecnologias/github.png";
+import Instagram from "/assets/contato/instagram.png"; // Ajustado o caminho para public
+import WhatsApp from "/assets/contato/whatsapp.png";
+import Linkedin from "/assets/contato/linkedin.png";
+import GitHub from "/assets/tecnologias/github.png";
 import BotaoContato from "../../components/BotaoContato/BotaoContato";
 import BotaoVoltar from "../../components/BotaoVoltar/BotaoVoltar";
 import { useRef } from "react";
@@ -24,7 +24,7 @@ function Contato(){
                 form.current.reset();
             },
             (error) => {
-                alert('Erro ao enviar a mensagem, tente novemente.', error.text);
+                alert('Erro ao enviar a mensagem, tente novamente.', error.text);
             },
         );
     };
@@ -45,12 +45,12 @@ function Contato(){
                 <form ref={form} onSubmit={enviarEmail} className="form-contato">
                     <div className="grupo-campos">
                         <div className="campo">
-                        <label>{t('contato.nome')}</label>
-                        <input type="text" name="user_name" placeholder={t('contato.nomeCampo')} required />
+                            <label>{t('contato.nome')}</label>
+                            <input type="text" name="user_name" placeholder={t('contato.nomeCampo')} required />
                         </div>
                         <div className="campo">
-                        <label>{t('contato.email')}</label>
-                        <input type="email" name="user_email" placeholder={t('contato.emailCampo')} required />
+                            <label>{t('contato.email')}</label>
+                            <input type="email" name="user_email" placeholder={t('contato.emailCampo')} required />
                         </div>
                     </div>
 
@@ -66,7 +66,6 @@ function Contato(){
 
                     <button type="submit" className="botao-enviar">{t('contato.enviar')}</button>
                 </form>
-
             </div>
 
             <div className="contatos">

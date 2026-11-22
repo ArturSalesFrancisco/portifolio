@@ -9,6 +9,7 @@
 .conteudo-projeto{
     display: flex;
     gap: 80px;
+    align-items: flex-start;
 }
 
 .informacoes{
@@ -23,11 +24,15 @@
     border: 5px solid black;
     border-radius: 5px;
     box-shadow: 8px 8px 0 0 black;
+    flex-shrink: 0;
 }
 
 .cabecalho{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .faixa-subtitulo{
@@ -36,12 +41,14 @@
 
 .funcionalidade{
     margin: 30px 0;
+    line-height: 1.6;
 }
 
 .bloco-galeria{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .galeria-telas{
@@ -58,6 +65,7 @@
     margin-bottom: 15px;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    border: 2px solid black;
 }
 
 .img-galeria:hover {
@@ -69,17 +77,59 @@
     border: none;
     border-radius: 30px;
     display: flex;
-    padding: 10px;
+    padding: 10px 20px;
     align-items: center;
     justify-content: center;
     width: 25%;
+    min-width: 220px;
     gap: 25px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 40px;
 }
 
 .github-icon{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+/* =========================================
+   RESPONSIVIDADE (Tablets e Celulares)
+   ========================================= */
+
+@media (max-width: 900px) {
+    .conteudo-projeto {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .banner-projeto {
+        width: 100%;
+        height: 280px;
+    }
+
+    .informacoes {
+        width: 100%;
+    }
+
+    .faixa-subtitulo {
+        margin-top: 30px;
+    }
+
+    .galeria-telas {
+        columns: 2;
+        width: 100%;
+    }
+
+    .link-repo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria-telas {
+        columns: 1;
+    }
 }

@@ -10,18 +10,20 @@ function Projetos(){
     const meusProjetos = i18n.language === 'en' ? meusProjetosEn : meusProjetosPt;
 
     return(
-        <>
-        <BotaoVoltar texto={t('projetos.btnInicial')} rota={'/'}/>
-        <div className="bloco-branco">
-            {t('projetos.conhecaProjetos')}
-        </div>
+        <div className="container-projetos">
+            <BotaoVoltar texto={t('projetos.btnInicial')} rota={'/'}/>
+            <div className="bloco-branco">
+                {t('projetos.conhecaProjetos')}
+            </div>
 
-        {meusProjetos.map(project => {
-            return(
-                <CardProjeto project={project}/>
-            )
-        })}
-        </>
+            <div className="lista-cards-projetos">
+                {meusProjetos.map(project => {
+                    return(
+                        <CardProjeto key={project.id} project={project}/>
+                    )
+                })}
+            </div>
+        </div>
     )
 }
 
