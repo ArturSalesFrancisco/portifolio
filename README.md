@@ -24,7 +24,6 @@ Esse é meu portifólio profissional que reune meus projetos durante minha, até
 - [Projetos em Destaque](#projetos-em-destaque)
 - [Contato](#contato)
 - [Autor](#autor)
-- [Contribuição](#contribuição)
 - [Licença](#licença)
 
 ## Sobre o Projeto
@@ -151,11 +150,11 @@ Aplicação web para catalogar e criar rankings personalizados de itens favorito
 ## Contato
 E-mail: artursalesfrancisco@gmail.com
 
-[GitHub:](https://github.com/ArturSalesFrancisco)
+[GitHub](https://github.com/ArturSalesFrancisco)
 
-[LinkedIn:](https://www.linkedin.com/in/artur-sales-10b7aa450/)
+[LinkedIn](https://www.linkedin.com/in/artur-sales-10b7aa450/)
 
-[Instagram:](https://www.linkedin.com/in/artur-sales-10b7aa450/)
+[Instagram](https://www.linkedin.com/in/artur-sales-10b7aa450/)
 
 ## Autor
 Desenvolvido por Artur Sales Francisco — Estudante de Engenharia de Software na PUC Minas (Coreu).
